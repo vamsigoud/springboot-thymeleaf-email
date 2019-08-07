@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+ @media only screen and (max-width: 900px) {
+  .main {
+  width: 950px !important;
+  }
+  .top-image {
+  width: 100% !important;
+  }
+  .inside-footer {
+  width: 920px !important;
+  }
+  table[class="contenttable"] {
+  width: 950px !important;
+  text-align: left !important;
+  }
+  td[class="force-col"] {
+  display: block !important;
+  }
+  td[class="rm-col"] {
+  display: none !important;
+  }
+  .mt {
+  margin-top: 15px !important;
+  }
+  *[class].width300 {width: 255px !important;}
+  *[class].block {display:block !important;}
+  *[class].blockcol {display:none !important;}
+  }
+  #planTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;  
+  margin-top:10px;
+  border: 2px solid #ddd;
+  }
+  #planTable td, #planTable th {  
+  border: 1px solid #ddd;  
+  color:  black;
+  background-color: #f2f2f2;
+  }
+  #planTable tr:nth-child(even){background-color: #f2f2f2;}
+  #planTable tr:hover {background-color: #ddd;}
+  #planTable th {  
+  background-color: white;
+  color: black;
+  }
+
+</style>
+</head>
+<table class="contenttable" align="center" style="font-weight: normal;border-collapse: collapse;margin-left: auto;margin-right: auto;padding: 0; font-family: Arial, sans-serif;color: #555559;background-color: white;font-size: 16px;">
+  <tbody><tr>
+    <td  style="border-collapse: collapse;margin: 0;padding: 0;-webkit-text-size-adjust: none;color: #F50821;font-family: Arial, sans-serif;font-size: 16px;">
+      <table>
+        <tbody><tr style="border:none;height:70px;width:950px">
+          <td><a style="text-decoration:none" href="https://fuzeuat.verizon.com/uuigui/uui/eapp/planning_cable/reviewPlan?planningGroupId=4949&amp;site=MDLTVAMD-H3024&amp;locationId=10321&amp;fuzePlanId=1001254" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://fuzeuat.verizon.com/uuigui/uui/eapp/planning_cable/reviewPlan?planningGroupId%3D4949%26site%3DMDLTVAMD-H3024%26locationId%3D10321%26fuzePlanId%3D1001254&amp;source=gmail&amp;ust=1565097039092000&amp;usg=AFQjCNErGBd_UqAdS-4jQgTWHtHmEl669w"><img class="m_-176872281599829613gmail-m_-6304848382007655313m_6176374427780440084top-image CToWUd" src="C:/Users/KRIVA3E/Desktop/Test_template/public/images/verizon_Logo.jpg" style="border:none;height:70px;width:850px" alt="Verizon FUZE Capacity Planning" data-image-whitelisted=""/></a></td>
+        </tr>
+        <tr style="text-align:left;color:white;font-size:20px;line-height:50px;font-weight:bold;border:none;height:70px;width:950px">
+    <!--       <td class="head-title" colspan="3">
+            <div class=center">
+              <p><img class="top-image CToWUd" src="C:/Users/KRIVA3E/Desktop/Test_template/public/images/plan_ready.jpg" style="border:none;height:70px;width:900px" alt="Verizon FUZE Capacity Planning" data-image-whitelisted=""></p>
+            </div>
+          </td> -->
+        </tr>
+        <tr>
+          <td class="title" valign="top" style="margin-left:27px;border-collapse: collapse;border: 0;width: 900px;margin: 0;-webkit-text-size-adjust: none;color: #555559;font-family: Arial, sans-serif;font-size: 16px;line-height: 16px;vertical-align: top;background-color: white;border-top: none;">
+            <table style="font-weight:normal;border-collapse:collapse;width:900px">
+              <tbody><tr>
+                <td class="text" style="border-collapse: collapse;border: 0;margin: 0;padding: 0;-webkit-text-size-adjust: none;color: #555559;font-family: Arial, sans-serif;font-size: 16px; line-height: 15px;">
+                  <div class="mktEditable" id="m_-176872281599829613gmail-m_-6304848382007655313m_6176374427780440084main_text" style="font-family:nhg-text-roman; color:#000000;margin-left:2px;"> <br>	A new plan has been created in FUZE, and is awaiting your approval.</br></div>
+                </td>
+              </tr>
+              <tr style="padding-top:5px">
+                <td class="grey-block" style="border-collapse:collapse;border:0px;margin:0px;color:rgb(85,85,89);font-family:Arial,sans-serif;font-size:16px;line-height:16px">
+                  <table id="planTable" align="left" style="width: 100%;">
+                    <tbody><tr>
+ <th  style="padding:13px;width: 31%;"> Plan Name </th>
+                      <th  style="padding:13px;width: 13%;"> Site</th>
+                      <th  style="padding:13px;width: 25%;"> Network Element Type</th>
+                      <th  style="padding:13px;width: 14%;"> Create Date</th>
+                      <th  style="padding:13px;width: 17%;"> Exhaust Date</th>	
+                    </tr>
+                    <tr style="background-color:rgb(242,242,242)" bgcolor="#f2f2f2">
+					  <td style="padding:13px;width: 31%;"> HUB-CARD-ADD-MDLTVAMD-H3024-4412</td>
+                      <td style="padding:13px;width: 13%;"> ${name}</td>
+                      <td style="padding:13px;width: 25%;"> ${location}</td>
+                      <td style="padding:13px;width: 14%;"> ${signature}</td>
+                      <td style="padding:13px;width: 17%;"> 07-24-2019</td>                 
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+              <tr>
+                <td class="text" style="border-collapse: collapse;-webkit-text-size-adjust: none;color: #555559;font-family: Arial, sans-serif;font-size: 16px;line-height: 16px;">
+                  <div class="mktEditable" id="main_text" style="font-family:nhg-text-roman; color:#000000;"><br>Below are the augment details</br></div>
+                </td>
+              </tr>
+              <tr>
+                <td class="grey-block">
+                  <table id="planTable" align="left" style="font-family:&quot;Trebuchet MS&quot;,Arial,Helvetica,sans-serif;border-collapse:collapse;text-align:left;margin-top:10px;border:2px solid rgb(221,221,221);width:100%" width="100%">
+                    <thead>
+                      <tr>
+ 
+ <th style="padding:10px;width: 10%;"> Augment Type</th>
+                        <th style="padding:10px;width: 15%;"> Network Element</th>
+                        <th style="padding:10px;width: 15%;"> Network Element</th>
+                        <th style="padding:10px;width: 21%;"> Model</th>
+                        <th style="padding:10px;width: 9%;">  Quantity</th>
+                        <th style="padding:10px;width: 30%;"> Description</th>                 
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+      <td style="padding:6px;width: 10%;"> CARD</td>
+                           <td style="padding:6px;width: 15%;"> MDLTVAMD-H3024</td>
+                           <td style="padding:6px;width: 15%;"> Corning Large GEN3 1x32 Splitter</td>
+                           <td style="padding:6px;width: 21%;"> Corning Large GEN3 1x32 Splitter</td>
+                           <td style="padding:6px;width: 9%;"> 1</td>
+                           <td style="padding:6px;width: 30%;"> Install card Corning Large GEN3 1x32 Splitter on HUB network element MDLTVAMD-H3024 in slot(s) 11 at site MDLTVAMD</td>
+                       
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="mktEditable" id="m_main_text" style="font-family:nhg-text-roman; color:#000000;margin-left:14px;">
+              <p style="font-family:nhg-text-italic;color:#000000;margin-bottom:10px;">
+                You can access your plan in FUZE	
+                by searching the plan name <b>HUB-CARD-ADD-MDLTVAMD-H3024 4412</b>
+              </p>
+            </div>
+          </td>
+        </tr>
+        <tr style="margin-left:20px;margin-bottom:15px">
+          <td><a style="text-decoration:none" href="https://fuzeuat.verizon.com/uuigui/uui/eapp/planning_cable/reviewPlan?planningGroupId=4949&amp;site=MDLTVAMD-H3024&amp;locationId=10321&amp;fuzePlanId=1001254" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://fuzeuat.verizon.com/uuigui/uui/eapp/planning_cable/reviewPlan?planningGroupId%3D4949%26site%3DMDLTVAMD-H3024%26locationId%3D10321%26fuzePlanId%3D1001254&amp;source=gmail&amp;ust=1565097039092000&amp;usg=AFQjCNErGBd_UqAdS-4jQgTWHtHmEl669w"><img class="m_-176872281599829613gmail-m_-6304848382007655313m_6176374427780440084top-image CToWUd" src="C:/Users/KRIVA3E/Desktop/Test_template/public/images/reviewButton.jpg" style="margin-left:25px;border:none;padding-bottom:8px;height:45px;width:170px;margin-bottom:8px" alt="Verizon FUZE Capacity Planning" /></a></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="mktEditable" id="n_main_text" style="font-family:nhg-text-roman; color:#000000;margin-left:14px;">
+              <p style="font-family:nhg-text-italic;color:#000000;margin-bottom:15px;">Plan needs to be approved by<b>  July 31</b><b><sup>st</sup></b>  ,<b> 2019</b></p>
+            </div>
+          </td>
+        </tr>
+        <tr style="margin-left:5px">
+          <td class="text">
+            <div class="mktEditable" id="m_text_1" style="font-family:nhg-text-roman;color:rgb(0,0,0);margin-left:14px;padding-left:1px">
+              <p style="font-family:nhg-text-italic;color:#000000; text-align:left">
+                For questions, please contact Verizon FUZE Capacity Planning Team at <a href="mailto:fcpsupport@one.verizon.com?Subject=Fuze%20Capcity%20Planning" target="_blank">Send Mail</a><br>Thank you,</br>	 Verizon FUZE Capacity Planning
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+</html>
